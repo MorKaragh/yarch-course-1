@@ -146,8 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,10 +158,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ee7b9621826574bf",
+  "active": "7666b26d42c1711f",
   "lastOpenFiles": [
     "software_architecture_document.md",
-    "requirements.md",
-    "traceability_matrix.md"
+    "traceability_matrix.md",
+    "вопросы",
+    "requirements.md"
   ]
 }

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="умная парковка" id="id-b2b6c1b790684eff82ca0ed1177481a7" version="5.0.0">
+  <folder name="Strategy" id="id-1cb78b6de6d5440297fba54d61ea8cfe" type="strategy"/>
+  <folder name="Business" id="id-4381f29bc2df4e058ed1eaaae7a40a34" type="business">
+    <element xsi:type="archimate:BusinessActor" name="Сотрудник предприятия" id="id-fcd21ad48dfb4f1d89f21fad6e50fc47"/>
+    <element xsi:type="archimate:BusinessActor" name="Администратор" id="id-b11a6f65df304e1cb6e54bfc31be1704"/>
+    <element xsi:type="archimate:BusinessActor" name="Охрана парковки" id="id-7f2ff945aef54f6eb25e46a92c344d70"/>
+  </folder>
+  <folder name="Application" id="id-bd38bc8d557f47c79638d5ded62a7342" type="application">
+    <element xsi:type="archimate:ApplicationCollaboration" name="Система бронирования парковочных мест" id="id-18f661c72cec442aa3db05b9393ec80b"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="id-74c954feb0854dce9afc97f66771141a" type="technology"/>
+  <folder name="Motivation" id="id-923b906c5f8743bc898a3553f14b4a06" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="id-cbc5d565a3224f9db44172d247d7d7c8" type="implementation_migration"/>
+  <folder name="Other" id="id-7aa5a7de80434f41917117f708abf00c" type="other"/>
+  <folder name="Relations" id="id-0a2570f0e6e64609b08ea957c67f3c96" type="relations">
+    <element xsi:type="archimate:TriggeringRelationship" id="id-e00b6d7eb27e4bad804691026501e1f0" source="id-b11a6f65df304e1cb6e54bfc31be1704" target="id-18f661c72cec442aa3db05b9393ec80b"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-3400069e0e48417392b8bc9a4ad6c36b" source="id-fcd21ad48dfb4f1d89f21fad6e50fc47" target="id-18f661c72cec442aa3db05b9393ec80b"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-fdb8ec70be494a8a83a351b82a880e90" source="id-18f661c72cec442aa3db05b9393ec80b" target="id-fcd21ad48dfb4f1d89f21fad6e50fc47"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-c0136f326c0844a9994241772687201d" source="id-18f661c72cec442aa3db05b9393ec80b" target="id-7f2ff945aef54f6eb25e46a92c344d70"/>
+  </folder>
+  <folder name="Views" id="id-534581ea6640435ea04998f380fd67d6" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Парковка С1" id="id-8fb7a559367440f8be29c4156e514756">
+      <child xsi:type="archimate:DiagramObject" id="id-35c0e3b90d44497d8843823cbc447b17" targetConnections="id-a37dbfa928444c06a452a87a1873f31a id-92cc3996e1af4455852081267ea1a861" font="1|Segoe UI Semibold|12.0|0|WINDOWS|1|-16|0|0|0|600|0|0|0|-52|3|2|1|34|Segoe UI Semibold" textPosition="1" archimateElement="id-18f661c72cec442aa3db05b9393ec80b">
+        <bounds x="348" y="252" width="169" height="109"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-9d0d85ada4504a54ba576413d05db49d" source="id-35c0e3b90d44497d8843823cbc447b17" target="id-579f36ce8d2b420bb1242f45ab299d1b" archimateRelationship="id-fdb8ec70be494a8a83a351b82a880e90">
+          <bendpoint startX="36" startY="-102" endX="35" endY="75"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="id-0b891a51063b4f0eb04164afd9367e68" source="id-35c0e3b90d44497d8843823cbc447b17" target="id-d8e26ce975814315b13e56720d4c911f" archimateRelationship="id-c0136f326c0844a9994241772687201d"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-579f36ce8d2b420bb1242f45ab299d1b" targetConnections="id-9d0d85ada4504a54ba576413d05db49d" textPosition="1" archimateElement="id-fcd21ad48dfb4f1d89f21fad6e50fc47">
+        <bounds x="373" y="102" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-92cc3996e1af4455852081267ea1a861" source="id-579f36ce8d2b420bb1242f45ab299d1b" target="id-35c0e3b90d44497d8843823cbc447b17" archimateRelationship="id-3400069e0e48417392b8bc9a4ad6c36b">
+          <bendpoint startX="-37" startY="75" endX="-36" endY="-102"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-d8e26ce975814315b13e56720d4c911f" targetConnections="id-0b891a51063b4f0eb04164afd9367e68" textPosition="1" archimateElement="id-7f2ff945aef54f6eb25e46a92c344d70">
+        <bounds x="636" y="279" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f3cf3782fef84aa0aa798c9b068d8ccb" textPosition="1" archimateElement="id-b11a6f65df304e1cb6e54bfc31be1704">
+        <bounds x="120" y="279" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-a37dbfa928444c06a452a87a1873f31a" source="id-f3cf3782fef84aa0aa798c9b068d8ccb" target="id-35c0e3b90d44497d8843823cbc447b17" archimateRelationship="id-e00b6d7eb27e4bad804691026501e1f0"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Парковка С2" id="id-60fc4aee118a43c4b63d4f49c31b0d13"/>
+  </folder>
+</archimate:model>
